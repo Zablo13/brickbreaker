@@ -1,0 +1,163 @@
+[gd_scene load_steps=38 format=3 uid="uid://tjyh75144xl8"]
+
+[ext_resource type="Texture2D" uid="uid://dgn0rvcxihi3b" path="res://grafik/Ball.png" id="1_7s4qf"]
+[ext_resource type="Script" uid="uid://cktn62okp4pds" path="res://script/ball.gd" id="1_cxlvu"]
+[ext_resource type="AudioStream" uid="uid://c7ph56r55oona" path="res://sound/4359__noisecollector__pongblipf4.wav" id="3_k0lcr"]
+[ext_resource type="AudioStream" uid="uid://dcc7kglgge5b7" path="res://sound/4360__noisecollector__ponblipg5.wav" id="4_w8ot5"]
+[ext_resource type="AudioStream" uid="uid://dbxb8dddxr8ma" path="res://sound/4361__noisecollector__pongblipa3.wav" id="5_8mqvl"]
+[ext_resource type="AudioStream" uid="uid://igqp21ix0mna" path="res://sound/4362__noisecollector__pongblipa4.wav" id="6_tlyq6"]
+[ext_resource type="AudioStream" uid="uid://cb18srr6wskpm" path="res://sound/4363__noisecollector__pongblipa3.wav" id="7_ks5tw"]
+[ext_resource type="AudioStream" uid="uid://klth7cyhwjn5" path="res://sound/4364__noisecollector__pongblipa4.wav" id="8_lh3e8"]
+[ext_resource type="AudioStream" uid="uid://cbsrlohjp116i" path="res://sound/4365__noisecollector__pongblipa5.wav" id="9_sn7my"]
+[ext_resource type="AudioStream" uid="uid://cut4mpj2u6aqj" path="res://sound/4366__noisecollector__pongblipb3.wav" id="10_s2pex"]
+[ext_resource type="AudioStream" uid="uid://cm50wgr2pln0o" path="res://sound/4367__noisecollector__pongblipb4.wav" id="11_nwgwu"]
+[ext_resource type="AudioStream" uid="uid://ckhxjd4yuvexi" path="res://sound/4368__noisecollector__pongblipc3.wav" id="12_1fokc"]
+[ext_resource type="AudioStream" uid="uid://bn5kyxp81oyx7" path="res://sound/4369__noisecollector__pongblipc4.wav" id="13_u251y"]
+[ext_resource type="AudioStream" uid="uid://boul3gorhgfu5" path="res://sound/4370__noisecollector__pongblipc5.wav" id="14_8tewj"]
+[ext_resource type="AudioStream" uid="uid://mxtcik4v1ekd" path="res://sound/4371__noisecollector__pongblipc4.wav" id="15_vbejf"]
+[ext_resource type="AudioStream" uid="uid://bknmgxqvfv1gn" path="res://sound/4372__noisecollector__pongblipc5.wav" id="16_q3htv"]
+[ext_resource type="AudioStream" uid="uid://dau3gh3xd3ljw" path="res://sound/4373__noisecollector__pongblipf3.wav" id="17_pepne"]
+[ext_resource type="AudioStream" uid="uid://dc43eiwdy70yb" path="res://sound/4374__noisecollector__pongblipf5.wav" id="18_rsp4y"]
+[ext_resource type="AudioStream" uid="uid://sb7jsmrbk1m3" path="res://sound/4375__noisecollector__pongblipg3.wav" id="19_gn20h"]
+[ext_resource type="AudioStream" uid="uid://v23eybp32vua" path="res://sound/4376__noisecollector__pongblipg4.wav" id="20_rxuac"]
+[ext_resource type="AudioStream" uid="uid://emnaak2h7l53" path="res://sound/4377__noisecollector__pongblipg3.wav" id="21_64b6j"]
+[ext_resource type="AudioStream" uid="uid://nfyd57aron7u" path="res://sound/4378__noisecollector__pongblipg4.wav" id="22_qedbw"]
+[ext_resource type="AudioStream" uid="uid://dxjock4f4nwv3" path="res://sound/4379__noisecollector__pongblipg5.wav" id="23_sc633"]
+[ext_resource type="AudioStream" uid="uid://cxf7d466lq0ya" path="res://sound/4380__noisecollector__pongblipd3.wav" id="24_3e7l3"]
+[ext_resource type="AudioStream" uid="uid://biul72hma1867" path="res://sound/4381__noisecollector__pongblipd4.wav" id="25_vdece"]
+[ext_resource type="AudioStream" uid="uid://d2ri5xkdnhunq" path="res://sound/4382__noisecollector__pongblipd5.wav" id="26_u251y"]
+[ext_resource type="AudioStream" uid="uid://sb85wat1nhrc" path="res://sound/4383__noisecollector__pongblipd3.wav" id="27_8tewj"]
+[ext_resource type="AudioStream" uid="uid://bt6qxykgpu7ln" path="res://sound/4384__noisecollector__pongblipd4.wav" id="28_vbejf"]
+[ext_resource type="AudioStream" uid="uid://l1un2slqy0eu" path="res://sound/4385__noisecollector__pongblipd5.wav" id="29_q3htv"]
+[ext_resource type="AudioStream" uid="uid://ilbagx2rotfi" path="res://sound/4386__noisecollector__pongblipe3.wav" id="30_pepne"]
+[ext_resource type="AudioStream" uid="uid://cxcbvfmouiduw" path="res://sound/4387__noisecollector__pongblipe4.wav" id="31_rsp4y"]
+[ext_resource type="AudioStream" uid="uid://o4g80tulsh1g" path="res://sound/4388__noisecollector__pongblipe5.wav" id="32_gn20h"]
+[ext_resource type="AudioStream" uid="uid://dhvyda6gt0osm" path="res://sound/4389__noisecollector__pongblipf3.wav" id="33_rxuac"]
+[ext_resource type="AudioStream" uid="uid://cjuadrmfodtqf" path="res://sound/4390__noisecollector__pongblipf4.wav" id="34_64b6j"]
+[ext_resource type="AudioStream" uid="uid://cri36t00av5iy" path="res://sound/4391__noisecollector__pongblipf5.wav" id="35_qedbw"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_u251y"]
+radius = 7.61577
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_f7cbr"]
+radius = 8.0
+
+[node name="Ball" type="CharacterBody2D" groups=["Ball"]]
+texture_filter = 1
+disable_mode = 1
+collision_layer = 2
+script = ExtResource("1_cxlvu")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_7s4qf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_u251y")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_f7cbr")
+debug_color = Color(0.90685, 0.251044, 0.436103, 0.42)
+
+[node name="Sounds" type="Node2D" parent="."]
+
+[node name="S1" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource("3_k0lcr")
+
+[node name="S2" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource("4_w8ot5")
+
+[node name="S3" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource("5_8mqvl")
+
+[node name="S4" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource("6_tlyq6")
+
+[node name="S5" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource("7_ks5tw")
+
+[node name="S6" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource("8_lh3e8")
+
+[node name="S7" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource("9_sn7my")
+
+[node name="S8" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource("10_s2pex")
+
+[node name="S9" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource("11_nwgwu")
+
+[node name="S10" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource("12_1fokc")
+
+[node name="S11" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource("13_u251y")
+
+[node name="S12" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource("14_8tewj")
+
+[node name="S13" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource("15_vbejf")
+
+[node name="S14" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource("16_q3htv")
+
+[node name="S15" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource("17_pepne")
+
+[node name="S16" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource("18_rsp4y")
+
+[node name="S17" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource("19_gn20h")
+
+[node name="S18" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource("20_rxuac")
+
+[node name="S19" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource("21_64b6j")
+
+[node name="S20" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource("22_qedbw")
+
+[node name="S21" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource("23_sc633")
+
+[node name="S22" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource("24_3e7l3")
+
+[node name="S23" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource("25_vdece")
+
+[node name="S24" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource("26_u251y")
+
+[node name="S25" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource("27_8tewj")
+
+[node name="S26" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource("28_vbejf")
+
+[node name="S27" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource("29_q3htv")
+
+[node name="S28" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource("30_pepne")
+
+[node name="S29" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource("31_rsp4y")
+
+[node name="S30" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource("32_gn20h")
+
+[node name="S31" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource("33_rxuac")
+
+[node name="S32" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource("34_64b6j")
+
+[node name="S33" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource("35_qedbw")

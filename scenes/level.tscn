@@ -1,0 +1,39 @@
+[gd_scene load_steps=6 format=3 uid="uid://bu6dtsyhy1l1a"]
+
+[ext_resource type="Script" uid="uid://y7fbry2ps141" path="res://script/level.gd" id="1_2q6dc"]
+[ext_resource type="Texture2D" uid="uid://dokqj68y7at3e" path="res://grafik/bg.png" id="2_w7c3h"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_mx8sn"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_ppgk2"]
+
+[sub_resource type="SystemFont" id="SystemFont_w7c3h"]
+subpixel_positioning = 0
+
+[node name="Level" type="Node2D"]
+texture_filter = 1
+script = ExtResource("1_2q6dc")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+texture = ExtResource("2_w7c3h")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+rotation = -3.14159
+shape = SubResource("WorldBoundaryShape2D_mx8sn")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1920, 1080)
+shape = SubResource("WorldBoundaryShape2D_ppgk2")
+
+[node name="Label" type="Label" parent="."]
+offset_right = 1920.0
+offset_bottom = 614.0
+theme_override_fonts/font = SubResource("SystemFont_w7c3h")
+theme_override_font_sizes/font_size = 50
+text = "Player 1 wins"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
