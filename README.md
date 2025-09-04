@@ -59,13 +59,13 @@ Download the latest release from the Releases page.
 
 📸 Screenshots
 Gameplay
-<p align="center"> <img src="screenshots/BB1.PNG" alt="Screenshot 1" width="400"/> <img src="screenshots/2.PNG" alt="Screenshot 2" width="400"/> </p>
+<p align="center"> <img src="screenshots/2.PNG" alt="Screenshot 2" width="400"/> </p>
 🔊 Sound
 This game uses sounds from the "Pong softsynth" pack on Freesound.
 
 The pack contains sounds by the following user:
 
-NoiseCollector – profile
+NoiseCollector
 
 You can find the pack online here:
 👉 https://freesound.org/people/NoiseCollector/packs/254/
