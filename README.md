@@ -60,7 +60,8 @@ Download the latest release from the Releases page.
 📸 Screenshots
 Gameplay
 <p align="center"> <img src="screenshots/2.PNG" alt="Screenshot 2" width="400"/> </p>
-🔊 Sound
+🔊 Sound   
+   
 This game uses sounds from the "Pong softsynth" pack on Freesound.
 
 The pack contains sounds by the following user:
